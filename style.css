@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  background-color: hsl(0, 0%, 100%);
+  width: 750px;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+label {
+  color: hsl(0, 1%, 44%);
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 140px;
+  height: 65px;
+  border: 2px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+  padding: 5px 0 5px 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+input:focus {
+  outline: none;
+  border: 2px solid hsl(259, 100%, 65%);
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+
+button {
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+svg {
+  width: 40px;
+  height: fit-content;
+}
+
+.result {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 110%;
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+  letter-spacing: 15px;
+}

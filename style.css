@@ -51,6 +51,7 @@ input {
   border: 2px solid hsl(0, 0%, 86%);
   border-radius: 7px;
   padding: 5px 0 5px 20px;
+  margin-bottom: 5px;
   font-size: 32px;
   font-weight: 700;
 }
@@ -71,8 +72,6 @@ input::placeholder {
   color: hsl(0, 100%, 67%);
   font-size: 12px;
   font-style: italic;
-  height: 20px;
-  display: none;
 }
 
 .color-red{
@@ -80,11 +79,7 @@ input::placeholder {
 }
 
 .border-red {
-  color: hsl(0, 100%, 67%);
-}
-
-.display-block {
-  display: block;
+  border-color: hsl(0, 100%, 67%);
 }
 
 button {
@@ -126,7 +121,7 @@ span {
   letter-spacing: 15px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 800px) {
   .content {
     width: 90%;
     padding: 50px 20px;
@@ -143,10 +138,14 @@ span {
   }
   
   input {
-    width: 90px;
+    width: 80%;
     height: 50px;
     font-size: 20px;
     padding-left: 10px;
+  }
+
+  .error-message {
+    width: 80%;
   }
 
   button {
